@@ -12,16 +12,16 @@
 	</head>
 	<body>
 		<header> 
-			<img src="" alt="">
+			<img src="/img/CA_Logo_2021_logomark.webp" alt="logo">
 		</header>
 		<main> 
-			<article>
+			<article class="grid_1">
 				<section>
 					<h1>Skab værdi for din karriere</h1>
 					<h1>Vælg den sikre jobsøgning med CA</h1>
 				</section>
 				<section>
-					<img src="/public/img/freja3.webp" alt="freja3">
+					<img src="/img/freja3.webp" alt="freja3" id="front_img">
 				</section>
 			</article>
 			<article>
@@ -49,5 +49,27 @@
 </html>
 
 <style>
+	body {
+		background-color: #e6e6dd;
+	}
+	img{
+		width: 100%;
+	}
+	article {
+		background-color: #f1f1ed;
+	}
+	h1 {
+		font-family: nexa bold;
+		font-size: 3rem;
+	}
+	#front_img {
+  		transform: scaleX(-1);
+ 		border-radius: 15rem;
+	}
+	.grid_1{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+
+	}
 
 </style>
