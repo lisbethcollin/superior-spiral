@@ -11,34 +11,36 @@
 		<title>Kampagne</title>
 	</head>
 	<body>
-		<header> 
+		<header class="logo"> 
 			<img src="/img/CA_Logo_2021_logomark.webp" alt="logo">
 		</header>
 		<main> 
 			<article class="grid_1">
 				<section>
 					<h1>Skab værdi for din karriere</h1>
-					<h1>Vælg den sikre jobsøgning med CA</h1>
+					<h1 class="blue">Vælg den sikre jobsøgning med CA</h1>
 				</section>
 				<section>
 					<img src="/img/freja3.webp" alt="freja3" id="front_img">
 				</section>
 			</article>
-			<article>
+			<article class="article2">
 				<section>
-					<h2>Kampagne</h2>
-					video
-				</section>
-				<section>
-					<a href=""></a>
-					<a href=""></a>
+					<h2>Kampagne</h2>		
+			<div class="iframe-wrapper">  
+ 				<iframe width="560" height="315" src="https://www.youtube.com/embed/gVpALQ3Gdnw?si=WhkcsD9d-_vMvEZz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			</section>
+				<section class="knapper">
+					<a href="https://youtube.com/playlist?list=PLEK2Qu52DbQyncWJ8sYo76h5hcSc4QFPj&si=Dcw51ao5LHNmLSVT"><button>Youtube Playlist</button></a>
+					<a href="https://www.figma.com/file/qfOaBXgkvUHsqpQo5kJud1/CA-kampagne?type=design&node-id=141%3A1761&mode=design&t=5ZLqTmVtKKzJlto6-1 "><button>Figma Prototype</button></a>
 				</section>
 			</article>
-			<article>
-				<section>
-					<img src="" alt="">
-					<img src="" alt="">
-					<img src="" alt="">
+			<article class="article3">
+				<section class="section3">
+					<img src="/img/freja1.webp" alt="freja1">
+					<img src="/img/freja2.webp" alt="freja2">
+					<img src="/img/ikke_medlem.webp" alt="ikke medlem">
 				</section>
 			</article>
 		</main>
@@ -50,26 +52,152 @@
 
 <style>
 	body {
-		background-color: #e6e6dd;
+		background-color: #E6E6DF;
 	}
-	img{
-		width: 100%;
-	}
+		
+img,
+video {
+	
+  width: 100%;
+  height: auto;
+  display: block;
+	
+}
 	article {
-		background-color: #f1f1ed;
+		background-color: #D9D9D9;
 	}
 	h1 {
 		font-family: nexa bold;
-		font-size: 3rem;
+		font-size: 2rem;
+		color: white;
+	}
+
+	.blue{ color:#0A79AE;
+
+	}
+
+	h2{
+		font-family: nexa bold;
+		font-size: 2rem;
+		color:#0A79AE;
 	}
 	#front_img {
   		transform: scaleX(-1);
- 		border-radius: 15rem;
+ 		
+		border-radius: 0 1rem 1rem 0;
+	
 	}
-	.grid_1{
+
+	main {
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+}
+button {
+  font-family: nexa bold;
+  font-size: 1.50rem;
+  padding: 0.5rem 2.5rem;
+  background-color: #E16745 ;
+  border-radius: 1rem;
+  border: none;
+}
+
+button:hover {
+  background-color: #d54141;
+}
+.grid_1{
+		display: grid;
+		margin-bottom: 5rem;
+		padding: 1.5rem 0 1.5rem 1.5rem;
+		gap: 2rem;
+	}
+.section3{
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	display: grid;
+	gap: 2rem;
+	
+}
+
+.article3{
+margin-top: 5rem;
+}
+
+.article2{
+	padding: 1.5rem;
+
+}
+
+.knapper{
+	display: grid;
+	gap: 1rem;
+	margin-top: 2rem;
+	place-items: center;
+
+}
+
+	
+	
+.iframe-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: calc(100% / (16 / 9));
+}
+	
+ 
+	
+iframe {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+.grid_1{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-
+		margin-bottom: 5rem;
+	
+		padding: 5rem 0 1.5rem 1.5rem;
+		gap: 1rem;
+		
 	}
 
+		h1 {
+		font-family: nexa bold;
+		font-size: 3rem;
+		color: white;
+	}
+
+	h2{
+		font-family: nexa bold;
+		font-size: 3rem;
+		color:#0A79AE;
+	}
+
+	.section3{
+	padding-top: 2.5rem;
+	padding-bottom: 2.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1rem;
+	
+}
+
+.knapper{
+	display: flex;
+	justify-content: space-around;
+	margin: 2rem;
+}
+.logo{
+	max-width: 30rem;
+} 
+
+}
 </style>
